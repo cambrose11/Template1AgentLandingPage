@@ -1,0 +1,383 @@
+Create a Figma file containing three desktop landing page templates for real estate agents at a luxury brokerage. These pages are designed for QR-code marketing and lead capture. The aesthetic should reflect luxury real estate branding similar to Sotheby’s International Realty: elegant, minimal, high-end, editorial typography, generous white space, clean grid layout.
+
+Design three distinct templates labeled:
+
+Template 1 — Personal Brand
+
+Template 2 — Area Specialist
+
+Template 3 — Home Search Funnel
+
+Each template must be built using Auto Layout, reusable components, and consistent variables for dynamic data fields.
+
+Frame width: 1440px desktop
+Grid: 12 column grid
+Margins: 80px
+Gutter: 24px
+
+Typography style:
+
+Headline: elegant serif (Didot / Playfair Display style)
+
+Body: modern sans-serif (Inter / Helvetica style)
+
+Color palette:
+
+Deep navy primary (#0B1F3B)
+
+White background
+
+Light grey sections
+
+Gold accent lines or buttons
+
+Black text
+
+Buttons must have hover states and consistent styles.
+
+All templates must contain placeholder fields:
+
+{{agent_name}}
+{{agent_photo}}
+{{agent_bio}}
+{{agent_phone}}
+{{agent_email}}
+{{agent_office}}
+{{cta_text}}
+{{cta_link}}
+{{town}}
+{{listings}}
+{{testimonials}}
+Template 1 — Personal Brand Landing Page
+
+Purpose: highlight the agent personally and capture seller leads.
+
+Hero section height: ~650px.
+
+Layout:
+
+Left column:
+
+Large headline
+“Work With {{agent_name}}”
+
+Subheadline
+“Luxury real estate specialist serving {{town}}”
+
+Primary CTA button
+{{cta_text}}
+
+Secondary button
+“View Listings”
+
+Right column:
+
+Large portrait agent photo
+
+Subtle background gradient overlay
+
+Below hero create a credibility bar:
+
+Horizontal strip containing:
+
+Years experience
+
+Number of homes sold
+
+Average sale price
+
+Office location
+
+About section:
+
+Two-column layout.
+
+Left:
+
+Agent portrait photo.
+
+Right:
+
+Heading
+“Meet {{agent_name}}”
+
+Body text placeholder for {{agent_bio}}
+
+Contact info:
+
+Phone
+Email
+Office
+
+Add subtle divider lines and generous padding.
+
+Testimonials section:
+
+Background color: light grey.
+
+Three testimonial cards arranged horizontally.
+
+Card content:
+
+Client quote
+Client name
+Star rating icons.
+
+Featured listings section:
+
+Grid of three property cards.
+
+Each card contains:
+
+Listing image
+Address
+Price
+Beds / Baths icons
+“View Property” button.
+
+Lead capture section:
+
+Centered form block with soft shadow.
+
+Heading:
+
+“Thinking of Buying or Selling?”
+
+Form fields:
+
+Name
+Email
+Phone
+Message
+
+Submit button:
+
+“Contact {{agent_name}}”
+
+Footer:
+
+Brokerage branding.
+
+Include:
+
+PPSIR logo
+Office address
+Phone
+Email
+Legal disclaimer text
+
+Template 2 — Area Specialist Landing Page
+
+Purpose: capture leads for a specific town or neighborhood.
+
+Hero section:
+
+Full width background photo of a neighborhood skyline.
+
+Overlay gradient for readability.
+
+Centered text block.
+
+Headline:
+
+“Homes in {{town}}”
+
+Subheadline:
+
+“Your guide to real estate in {{town}}”
+
+CTA button:
+
+“See Available Homes”
+
+Below hero create market snapshot section.
+
+Four stat cards in a horizontal row:
+
+Median home price
+Average days on market
+Homes sold this month
+Year-over-year price change
+
+Use large typography and icons.
+
+Agent introduction section:
+
+Two column layout.
+
+Left:
+
+Agent photo.
+
+Right:
+
+Heading:
+
+“Local Expert: {{agent_name}}”
+
+Short paragraph using {{agent_bio}}.
+
+Contact details beneath.
+
+Featured homes section:
+
+Grid of four listing cards.
+
+Each card includes:
+
+Image
+Price
+Address
+Beds / Baths
+CTA button
+
+Map section:
+
+Full width map placeholder labeled:
+
+“Map of homes in {{town}}”
+
+Below map include CTA banner:
+
+“Want the newest listings before they hit the market?”
+
+Button:
+
+“Get Early Access”
+
+Lead capture form:
+
+Fields:
+
+Name
+Email
+Phone
+
+Checkbox:
+
+“Send me new listings in {{town}}”
+
+Submit button:
+
+“Notify Me”
+
+Footer identical to template 1.
+
+Template 3 — Buyer Funnel Landing Page
+
+Purpose: capture buyers looking for homes.
+
+Hero section:
+
+Minimal clean design.
+
+Headline:
+
+“Find Your Next Home in {{town}}”
+
+Subheadline:
+
+“Access the latest listings and off-market opportunities.”
+
+Primary CTA button:
+
+“Start Your Search”
+
+Secondary CTA:
+
+“Schedule a Consultation”
+
+Agent introduction strip below hero.
+
+Small circular headshot.
+
+Text:
+
+“Search with guidance from {{agent_name}}, trusted local advisor.”
+
+Search section:
+
+Large centered search box UI.
+
+Fields:
+
+Location
+Price range
+Beds
+Baths
+
+Search button.
+
+Featured listings grid below.
+
+Three listing cards similar to other templates.
+
+Add hover effects to cards.
+
+Education section:
+
+Three columns explaining buying process.
+
+Icons above text.
+
+Steps:
+
+1 — Search Homes
+2 — Schedule Tours
+3 — Make an Offer
+
+Each card contains short text description.
+
+Lead capture CTA section:
+
+Background navy.
+
+White text.
+
+Headline:
+
+“Get Listings Sent Directly to Your Inbox”
+
+Form fields:
+
+Name
+Email
+Phone
+
+Submit button styled gold.
+
+Footer with brokerage branding.
+
+Components to Create in Figma
+
+All templates must share reusable components:
+
+Hero section
+Agent profile block
+Listing card
+Testimonial card
+Market stat card
+Lead form block
+Footer
+
+Components must use Auto Layout and support variable content lengths.
+
+Spacing System
+
+Use consistent spacing tokens:
+
+8px
+16px
+24px
+40px
+80px
+120px
+Deliverable
+
+The Figma file should contain:
+
+Frame 1 — Personal Brand Template
+Frame 2 — Area Specialist Template
+Frame 3 — Buyer Funnel Template
+Component Library Page
+Style Guide Page
