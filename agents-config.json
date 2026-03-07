@@ -1,0 +1,16 @@
+{
+  "agents": [
+    {
+      "slug": "laurie-rockoff",
+      "name": "Laurie Rockoff",
+      "phone": "(201) 555-0100",
+      "email": "laurie.rockoff@sothebysrealty.com",
+      "office": "Hoboken, NJ",
+      "town": "Hudson County",
+      "ctaText": "Schedule a Consultation",
+      "bio": "Laurie Rockoff brings decades of luxury real estate expertise to Hudson County. Known for her personalized service and deep market knowledge, she guides buyers and sellers through every step of the process with care and precision.",
+      "headshot": "",
+      "headerBackground": ""
+    }
+  ]
+}
