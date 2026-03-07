@@ -2,17 +2,28 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from './components/Button';
 import { ListingCard } from './components/ListingCard';
 import { TestimonialCard } from './components/TestimonialCard';
+import type { AgentConfig } from '../types/agent';
 
-export default function App() {
-  // Dynamic data placeholders
-  const agentName = "[AGENT NAME]";
-  const town = "[CITY/TOWN]";
-  const ctaText = "[CTA TEXT]";
-  const agentPhone = "[PHONE NUMBER]";
-  const agentEmail = "[EMAIL ADDRESS]";
-  const agentOffice = "[OFFICE LOCATION]";
-  const agentBio = "[AGENT BIO - Add your professional background, experience, and unique value proposition here.]";
-  const agentPhotoUrl = "https://via.placeholder.com/600x800/002349/FFFFFF?text=Agent+Photo";
+const DEFAULT_HEADER_BG =
+  "https://images.unsplash.com/photo-1706809019043-c16ada0165e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBtb2Rlcm4lMjBob21lJTIwZXh0ZXJpb3J8ZW58MXx8fHwxNzcyNzQ4MTMzfDA&ixlib=rb-4.1.0&q=80&w=1080";
+const DEFAULT_HEADSHOT =
+  "https://via.placeholder.com/600x800/002349/FFFFFF?text=Agent+Photo";
+
+interface AppProps {
+  agent?: AgentConfig;
+}
+
+export default function App({ agent }: AppProps) {
+  // Dynamic data — falls back to template placeholders when no agent is supplied
+  const agentName = agent?.name ?? "[AGENT NAME]";
+  const town = agent?.town ?? "[CITY/TOWN]";
+  const ctaText = agent?.ctaText ?? "[CTA TEXT]";
+  const agentPhone = agent?.phone ?? "[PHONE NUMBER]";
+  const agentEmail = agent?.email ?? "[EMAIL ADDRESS]";
+  const agentOffice = agent?.office ?? "[OFFICE LOCATION]";
+  const agentBio = agent?.bio ?? "[AGENT BIO - Add your professional background, experience, and unique value proposition here.]";
+  const agentPhotoUrl = agent?.headshot || DEFAULT_HEADSHOT;
+  const headerBgUrl = agent?.headerBackground || DEFAULT_HEADER_BG;
 
   const listings = [
     {
@@ -62,7 +73,7 @@ export default function App() {
       <section 
         className="relative min-h-[700px] flex items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 35, 73, 0.75), rgba(0, 35, 73, 0.75)), url('https://images.unsplash.com/photo-1706809019043-c16ada0165e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBtb2Rlcm4lMjBob21lJTIwZXh0ZXJpb3J8ZW58MXx8fHwxNzcyNzQ4MTMzfDA&ixlib=rb-4.1.0&q=80&w=1080')`,
+          backgroundImage: `linear-gradient(rgba(0, 35, 73, 0.75), rgba(0, 35, 73, 0.75)), url('${headerBgUrl}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
